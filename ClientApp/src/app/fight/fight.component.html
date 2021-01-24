@@ -1,0 +1,26 @@
+<!-- 
+<div class="container">
+    <h1>Add Character</h1>
+    <p>You can add new character based on your profile.</p>
+    <form [formGroup]="form" #f="ngForm" (ngSubmit)="submit()">
+           
+        <div class="form-group">
+            <label for="addChar"> Choose Your New Character</label>
+            <select formControlName="addChar" class="form-control" (change)="changeWebsite($event)">
+                <option *ngFor="let character of (characters$ | async)" [ngValue]="character">{{character.name}}</option>
+            </select>
+            <div *ngIf="fo.addChar.touched && fo.addChar.invalid" class="alert alert-danger">
+                <div *ngIf="fo.addChar.errors.required">Name is required.</div>
+            </div>
+        </div>
+        <div class="alert alert-success" *ngIf="f.submitted && charAdded" >  
+          {{message}}
+          </div>
+          <div class="alert alert-danger" *ngIf="f.submitted && !charAdded">
+            {{message}}
+           
+            </div>
+         
+       
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Add Character</button>
+    </form> -->

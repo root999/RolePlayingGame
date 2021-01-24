@@ -1,0 +1,11 @@
+
+<ng-container *ngIf="(character$ | async) as character; else loading">
+
+    <h1>Name :{{ character.name }}</h1>
+    <div>HitPoint :{{ character.hitPoints }}</div>
+    <div>Strength : {{ character.strength }}</div>
+    <div>Defense : {{ character.defense }}</div>
+    <div>Intelligence : {{ character.intelligence }}</div>
+    <div>Class :{{ character.class }}</div>
+  </ng-container>
+  <ng-template #loading>Loading…</ng-template>
